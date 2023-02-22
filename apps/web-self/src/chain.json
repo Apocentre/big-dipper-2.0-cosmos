@@ -1,11 +1,11 @@
 {
-  "chainName": "assetmantle",
-  "title": "AssetMantle Block Explorer",
+  "chainName": "self",
+  "title": "Self Block Explorer",
   "extra": {
     "profile": true,
-    "graphqlWs": true
+    "graphqlWs": false
   },
-  "previewImage": "https://s3.bigdipper.live/assetmantle.png",
+  "previewImage": "https://s3.bigdipper.live/front.png",
   "themes": {
     "default": "dark",
     "themeList": [
@@ -15,23 +15,23 @@
     ],
     "dark": {
       "primary": {
-        "main": "#F3B211",
+        "main": "#DC7BFC",
         "contrastText": "#FFFFFF"
       },
       "background": {
-        "default": "#000000",
-        "paper": "#1F1F1F"
+        "default": "#0E0826",
+        "paper": "#1B173A"
       },
-      "divider": "#494949",
+      "divider": "#262058",
       "text": {
         "primary": "#E6E6E6",
         "secondary": "#C4C4C4"
       },
       "custom": {
         "general": {
-          "background": "#000000",
-          "surfaceOne": "#1F1F1F",
-          "surfaceTwo": "#2C2C2C",
+          "background": "#0E0826",
+          "surfaceOne": "#1B173A",
+          "surfaceTwo": "#160F32",
           "icon": "#999999"
         },
         "fonts": {
@@ -40,36 +40,36 @@
           "fontThree": "#818181",
           "fontFour": "#999999",
           "fontFive": "#FFFFFF",
-          "highlight": "#0075FF"
+          "highlight": "#56B4E9"
         },
         "primaryData": {
-          "one": "#F3B211",
-          "two": "#C69006",
-          "three": "#B7B00A",
-          "four": "#C86002"
+          "one": "#9D35FF",
+          "two": "#F372DB",
+          "three": "#36B9AB",
+          "four": "#4EABF0"
         },
         "results": {
           "pass": "#1EC490",
           "fail": "#FD3B4C"
         },
         "tokenomics": {
-          "one": "#F3B211",
-          "two": "#2665FF",
-          "three": "#12F3B3"
+          "one": "#2E9CED",
+          "two": "#E3AB55",
+          "three": "#5ACF78"
         },
         "condition": {
           "zero": "#E8E8E8",
           "one": "#1EC490",
-          "two": "#FF9338",
-          "three": "#FF608A"
+          "two": "#FF961B",
+          "three": "#FC6A8A"
         },
         "charts": {
-          "zero": "#E8E8E8",
-          "one": "#12F3B3",
-          "two": "#F26511",
-          "three": "#0D50E2",
-          "four": "#F3B211",
-          "five": "#F312C2"
+          "zero": "#E6E6E6",
+          "one": "#5E94FF",
+          "two": "#497BFF",
+          "three": "#5ACF78",
+          "four": "#E3AB55",
+          "five": "#C25396"
         },
         "tags": {
           "zero": "#E8E8E8",
@@ -116,29 +116,29 @@
   },
   "chains": [
     {
-      "network": "mantle-1",
+      "network": "self-dev-1",
       "chainType": "Mainnet",
       "genesis": {
-        "time": "2022-07-12T02:34:54",
+        "time": "2021-06-18T17:00:00",
         "height": 1
       },
       "prefix": {
-        "consensus": "mantlevalcons",
-        "validator": "mantlevaloper",
-        "account": "mantle"
+        "consensus": "selfvalcons",
+        "validator": "selfvaloper",
+        "account": "self"
       },
-      "primaryTokenUnit": "umntl",
-      "votingPowerTokenUnit": "umntl",
+      "primaryTokenUnit": "uself",
+      "votingPowerTokenUnit": "uself",
       "tokenUnits": {
-        "umntl": {
-          "display": "mntl",
+        "uself": {
+          "display": "self",
           "exponent": 6
         }
       },
       "endpoints": {
-        "graphql": "https://gql.assetmantle.forbole.com/v1/graphql",
-        "graphqlWebsocket": "wss://gql.assetmantle.forbole.com/v1/graphql",
-        "publicRpcWebsocket": "wss://rpc.assetmantle.forbole.com/websocket"
+        "graphql": "http://localhost:8080/v1/graphql",
+        "graphqlWebsocket": "ws://localhost:8080/v1/graphql",
+        "publicRpcWebsocket": "http://localhost:26657"
       },
       "marketing": {
         "matomoURL": "https://analytics.bigdipper.live",

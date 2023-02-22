@@ -1,38 +1,37 @@
 {
-  "chainName": "base",
-  "title": "Desmos Block Explorer",
+  "chainName": "self",
+  "title": "Self Block Explorer",
   "extra": {
     "profile": true,
     "graphqlWs": false
   },
-  "previewImage": "https://s3.bigdipper.live/desmos.png",
+  "previewImage": "https://s3.bigdipper.live/front.png",
   "themes": {
-    "default": "light",
+    "default": "dark",
     "themeList": [
       "dark",
-      "light",
       "deuteranopia",
       "tritanopia"
     ],
     "dark": {
       "primary": {
-        "main": "#FF835B",
+        "main": "#DC7BFC",
         "contrastText": "#FFFFFF"
       },
       "background": {
-        "default": "#000000",
-        "paper": "#131316"
+        "default": "#0E0826",
+        "paper": "#1B173A"
       },
-      "divider": "#282828",
+      "divider": "#262058",
       "text": {
         "primary": "#E6E6E6",
         "secondary": "#C4C4C4"
       },
       "custom": {
         "general": {
-          "background": "#000000",
-          "surfaceOne": "#131316",
-          "surfaceTwo": "#212123",
+          "background": "#0E0826",
+          "surfaceOne": "#1B173A",
+          "surfaceTwo": "#160F32",
           "icon": "#999999"
         },
         "fonts": {
@@ -41,35 +40,35 @@
           "fontThree": "#818181",
           "fontFour": "#999999",
           "fontFive": "#FFFFFF",
-          "highlight": "#4092CD"
+          "highlight": "#56B4E9"
         },
         "primaryData": {
-          "one": "#F87255",
-          "two": "#FA9147",
-          "three": "#43BE7C",
-          "four": "#43A1BE"
+          "one": "#9D35FF",
+          "two": "#F372DB",
+          "three": "#36B9AB",
+          "four": "#4EABF0"
         },
         "results": {
           "pass": "#1EC490",
           "fail": "#FD3B4C"
         },
         "tokenomics": {
-          "one": "#43A1BE",
-          "two": "#E3BB55",
-          "three": "#20D292"
+          "one": "#2E9CED",
+          "two": "#E3AB55",
+          "three": "#5ACF78"
         },
         "condition": {
-          "zero": "#E6E6E6",
+          "zero": "#E8E8E8",
           "one": "#1EC490",
-          "two": "#FF9338",
-          "three": "#FF608A"
+          "two": "#FF961B",
+          "three": "#FC6A8A"
         },
         "charts": {
           "zero": "#E6E6E6",
-          "one": "#43BE7C",
-          "two": "#FA9147",
-          "three": "#F44747",
-          "four": "#43A1BE",
+          "one": "#5E94FF",
+          "two": "#497BFF",
+          "three": "#5ACF78",
+          "four": "#E3AB55",
           "five": "#C25396"
         },
         "tags": {
@@ -98,144 +97,48 @@
       }
     },
     "light": {
-      "primary": {
-        "main": "#FF835B",
-        "contrastText": "#FFFFFF"
-      },
-      "background": {
-        "default": "#F8F8F8",
-        "paper": "#FFFFFF"
-      },
-      "divider": "#E8E8E8",
-      "text": {
-        "primary": "#000000",
-        "secondary": "#414141"
-      },
+      "primary": {},
+      "background": {},
+      "text": {},
       "custom": {
         "general": {
-          "background": "#F8F8F8",
-          "surfaceOne": "#FFFFFF",
-          "surfaceTwo": "#F8F8F8",
           "icon": "#999999"
         },
-        "fonts": {
-          "fontOne": "#000000",
-          "fontTwo": "#414141",
-          "fontThree": "#777777",
-          "fontFour": "#999999",
-          "fontFive": "#FFFFFF",
-          "highlight": "#4092CD"
-        },
-        "primaryData": {
-          "one": "#F87255",
-          "two": "#FA9147",
-          "three": "#20D494",
-          "four": "#2FB6E0"
-        },
-        "results": {
-          "pass": "#1EC490",
-          "fail": "#FD3B4C"
-        },
-        "tokenomics": {
-          "one": "#2FB6E0",
-          "two": "#FFC93D",
-          "three": "#20D494"
-        },
-        "condition": {
-          "zero": "#E6E6E6",
-          "one": "#1EC490",
-          "two": "#FF9338",
-          "three": "#FF608A"
-        },
-        "charts": {
-          "zero": "#E6E6E6",
-          "one": "#20D494",
-          "two": "#FF8732",
-          "three": "#F44747",
-          "four": "#2FB6E0",
-          "five": "#E95EB1"
-        },
-        "tags": {
-          "zero": "#E8E8E8",
-          "one": "#2460FA",
-          "two": "#2BA891",
-          "three": "#E79720",
-          "four": "#F17047",
-          "five": "#DA4B4B",
-          "six": "#9438DC",
-          "seven": "#1A869D",
-          "eight": "#2C9944",
-          "nine": "#B49F31",
-          "ten": "#E9A846",
-          "eleven": "#E94681",
-          "twelve": "#C15EC4",
-          "thirteen": "#C388D9",
-          "fourteen": "#46AEE9",
-          "fifteen": "#58BC91",
-          "sixteen": "#90BC58",
-          "seventeen": "#E99E8E",
-          "eighteen": "#F0A479",
-          "nineteen": "#D37763",
-          "twenty": "#D9C788"
-        }
+        "fonts": {},
+        "primaryData": {},
+        "results": {},
+        "tokenomics": {},
+        "condition": {},
+        "charts": {},
+        "tags": {}
       }
     }
   },
   "chains": [
     {
-      "network": "desmos-mainnet",
+      "network": "self-dev-1",
       "chainType": "Mainnet",
       "genesis": {
-        "time": "2021-08-31T16:15:00",
+        "time": "2021-06-18T17:00:00",
         "height": 1
       },
       "prefix": {
-        "consensus": "desmosvalcons",
-        "validator": "desmosvaloper",
-        "account": "desmos"
+        "consensus": "selfvalcons",
+        "validator": "selfvaloper",
+        "account": "self"
       },
-      "primaryTokenUnit": "udsm",
-      "votingPowerTokenUnit": "udsm",
+      "primaryTokenUnit": "uself",
+      "votingPowerTokenUnit": "uself",
       "tokenUnits": {
-        "udsm": {
-          "display": "dsm",
+        "uself": {
+          "display": "self",
           "exponent": 6
         }
       },
       "endpoints": {
-        "graphql": "https://gql.desmos.forbole.com/v1/graphql",
-        "graphqlWebsocket": "wss://gql.desmos.forbole.com/v1/graphql",
-        "publicRpcWebsocket": "wss://rpc.desmos.forbole.com/websocket"
-      },
-      "marketing": {
-        "matomoURL": "https://analytics.bigdipper.live",
-        "matomoSiteID": "8"
-      }
-    },
-    {
-      "network": "morpheus-apollo-3",
-      "chainType": "Testnet",
-      "genesis": {
-        "time": "2022-10-24T08:00:00",
-        "height": 7942286
-      },
-      "prefix": {
-        "consensus": "desmosvalcons",
-        "validator": "desmosvaloper",
-        "account": "desmos"
-      },
-      "primaryTokenUnit": "udaric",
-      "votingPowerTokenUnit": "udaric",
-      "tokenUnits": {
-        "udaric": {
-          "display": "daric",
-          "exponent": 6
-        }
-      },
-      "endpoints": {
-        "graphql": "https://gql-morpheus.desmos.forbole.com/v1/graphql",
-        "graphqlWebsocket": "wss://gql-morpheus.desmos.forbole.com/v1/graphql",
-        "publicRpcWebsocket": "wss://rpc-morpheus.desmos.forbole.com/websocket"
+        "graphql": "http://localhost:8080/v1/graphql",
+        "graphqlWebsocket": "ws://localhost:8080/v1/graphql",
+        "publicRpcWebsocket": "http://localhost:26657"
       },
       "marketing": {
         "matomoURL": "https://analytics.bigdipper.live",

@@ -2,6 +2,7 @@ import chainCoing from '@/chainConfig';
 import useStyles from '@/components/ChainIcon/useStyles';
 import Image, { type ImageProps } from 'next/image';
 import agoricIconLight from 'shared-utils/assets/icons/agoric-light.svg?url';
+import selfIconLight from 'shared-utils/assets/icons/self-light.svg?url';
 import akashIconDark from 'shared-utils/assets/icons/akash-dark.svg?url';
 import assetmantleIconDark from 'shared-utils/assets/icons/assetmantle-dark.svg?url';
 import bandIconDark from 'shared-utils/assets/icons/band-dark.svg?url';
@@ -34,6 +35,7 @@ import solanaIconDark from 'shared-utils/assets/icons/solana-dark.svg?url';
 import solanaIconLight from 'shared-utils/assets/icons/solana-light.svg?url';
 import strideIconDark from 'shared-utils/assets/icons/stride-dark.svg?url';
 import agoricLogoLight from 'shared-utils/assets/logos/agoric-light.png';
+import selfLogoLight from 'shared-utils/assets/logos/self-light.png';
 import akashLogoDark from 'shared-utils/assets/logos/akash-dark.svg?url';
 import assetmantleLogoDark from 'shared-utils/assets/logos/assetmantle-dark.svg?url';
 import bandLogoDark from 'shared-utils/assets/logos/band-dark.svg?url';
@@ -83,9 +85,7 @@ const ChainIcon = ({
   switch (chainName) {
     case 'self':
       [iconDark, iconLight] =
-        type === 'icon'
-          ? [agoricIconLight, agoricIconLight]
-          : [agoricLogoLight.src, agoricLogoLight.src];
+        type === 'icon' ? [selfIconLight, selfIconLight] : [selfLogoLight.src, selfLogoLight.src];
       break;
     case 'agoric':
       [iconDark, iconLight] =

@@ -4,6 +4,7 @@ import Drawer from '@mui/material/Drawer';
 import { FC } from 'react';
 import { useRecoilValue } from 'recoil';
 import BigDipperLogoRed from 'shared-utils/assets/big-dipper-red.svg';
+import SelfLogo from 'shared-utils/assets/self-logo.svg';
 import BigDipperLogoWhite from 'shared-utils/assets/big-dipper-white.svg';
 import { readTheme } from '@/recoil/settings';
 import TitleBar from '@/components/nav/components/title_bar';
@@ -50,11 +51,13 @@ const Desktop: FC<DesktopProps> = ({ className, title }) => {
             }),
           }}
         >
-          {theme === 'light' ? (
-            <BigDipperLogoRed className={classes.logo} onClick={toggleMenu} role="button" />
+          <SelfLogo className={classes.logo} onClick={toggleMenu} role="button" />
+
+          {/* {theme === 'light' ? (
+          <BigDipperLogoWhite className={classes.logo} onClick={toggleMenu} role="button" />
           ) : (
             <BigDipperLogoWhite className={classes.logo} onClick={toggleMenu} role="button" />
-          )}
+          )} */}
           <MenuItems />
         </Drawer>
       </div>

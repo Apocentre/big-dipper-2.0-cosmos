@@ -31,18 +31,18 @@ const Footer: FC<{ className?: string }> = ({ className }) => {
         {/* ============================= */}
         {/* logo */}
         {/* ============================= */}
-        <div className="footer__logo--container">
+        {/* <div className="footer__logo--container">
           {theme === 'light' ? (
             <FooterLogoLight className="footer__logo" />
           ) : (
             <FooterLogoDark className="footer__logo" />
           )}
           <p className="footer__slogan">{title}</p>
-        </div>
+        </div> */}
         {/* ============================= */}
         {/* links */}
         {/* ============================= */}
-        <div className="footer__links">
+        {/* <div className="footer__links">
           {footerLinks.map((group) => (
             <div key={group.key} className={`${group.key} links__group`}>
               <h3>{t(`common:${group.key}`)}</h3>
@@ -52,11 +52,11 @@ const Footer: FC<{ className?: string }> = ({ className }) => {
                 </a>
               ))}
             </div>
-          ))}
-          {/* ============================= */}
-          {/* social */}
-          {/* ============================= */}
-          <div className="footer__social">
+          ))} */}
+        {/* ============================= */}
+        {/* social */}
+        {/* ============================= */}
+        {/* <div className="footer__social">
             <h3>{t('common:community')}</h3>
             <SocialMedia />
             <div>
@@ -67,8 +67,8 @@ const Footer: FC<{ className?: string }> = ({ className }) => {
                 </Button>
               </a>
             </div>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
       <Divider />
       <div className="footer__closing--container">
@@ -88,7 +88,7 @@ const Footer: FC<{ className?: string }> = ({ className }) => {
                 target="_blank"
                 rel="noreferrer noopener"
                 title="LICENSE"
-                href="https://raw.githubusercontent.com/forbole/big-dipper-2.0-cosmos/master/LICENSE"
+                // href="https://raw.githubusercontent.com/forbole/big-dipper-2.0-cosmos/master/LICENSE"
               />,
             ]}
             values={{

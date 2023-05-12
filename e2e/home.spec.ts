@@ -8,7 +8,7 @@ test('home page', async ({ page, isMobile }) => {
   await waitForReady(page);
 
   // Test a title
-  await expect(page).toHaveTitle(/Big Dipper/);
+  await expect(page).toHaveTitle(/Self Block Explorer/);
 
   if (!isMobile) {
     // Test language change

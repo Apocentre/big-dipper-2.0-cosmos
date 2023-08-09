@@ -1,6 +1,6 @@
 {
   "chainName": "self",
-  "title": "Self Block Explorer",
+  "title": "Self Chain Explorer",
   "extra": {
     "profile": true,
     "graphqlWs": false

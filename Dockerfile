@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=node:18
+ARG BASE_IMAGE=node:18-bullseye
 ARG PROJECT_NAME=web
 
 # This is a multiple stage Dockerfile.
